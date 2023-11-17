@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>department</title>
+</head>
+<body>
+{% block metadescription %}
+     {% if department %}
+         {{ department.name }}
+     {% endif %}
+
+<div>
+    {% if department %}
+      <h1>{{ department.name }}</h1>
+    {% endif %}
+</div>
+<div>
+    {% if course %}
+      <h2>{{ course.name }}</h2>
+    {% endif %}
+</div>
+
+{% endblock %}
+</body>
+</html>

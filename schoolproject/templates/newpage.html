@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+Name:<input type="text" name="name" placeholder="Enter your name"><br>
+<br>
+D.O.B:<input type="date" name="dob" placeholder="Enter your dob"><br>
+<br>
+Age:<input type="number" name="age" placeholder="Enter your age"><br>
+<br>
+
+    Gender:
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+         <label class="form-check-label" for="exampleRadios1">
+         Male
+     </label>
+       </div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Female
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Other
+  </label>
+</div>
+<br>
+Phone Number:<input type="number" placeholder="phonenumber"><br>
+<br>
+E-mail id:<input type="email" placeholder="email_id"><br>
+<br>
+Address:<input type="text" placeholder="address"><br>
+<br>
+
+{% block content %}
+  <p><b>Department:</b>
+       <select name="city" class="form-control">
+           <option value="1"></option>
+           <option value="2">Arts</option>
+           <option value="3">Commerce</option>
+           <option value="4">Science</option>
+       </select>
+  </p>
+
+    <br>
+
+  <p><b>Course:</b>
+       <select name="city" class="form-control">
+           <option value="1"></option>
+           <option value="2">B.com</option>
+           <option value="3">BBA</option>
+           <option value="4">Computer Scoence</option>
+           <option value="5">English</option>
+           <option value="6">Malayalam</option>
+           <option value="7">Maths</option>
+
+       </select>
+  </p>
+    <br>
+
+<p><b>Purpose:</b>
+       <select name="city" class="form-control">
+           <option value="1"></option>
+           <option value="2">For enquiry</option>
+           <option value="3">Place order</option>
+           <option value="4">Return</option>
+       </select>
+  </p>
+
+
+
+<button type="button" class="btn btn-success">Submit</button>
+
+<a class="btn btn-primary" href="/" role="button">Home</a>
+
+{% endblock %}
+
+</div>
+</div>
+</body>
+</html>
